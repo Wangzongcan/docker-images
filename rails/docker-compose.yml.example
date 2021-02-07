@@ -1,0 +1,20 @@
+version: "3"
+services:
+  app:
+    build: ./baseimage
+    environment:
+      - APP_NAME=
+    ports:
+      - "80:80"
+      - "443:443"
+      - "22104:22"
+  db:
+    image: "postgres:13.1"
+    environment:
+      - POSTGRES_DB=
+      - POSTGRES_USER=
+      - POSTGRES_PASSWORD=
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./postgres/data:/var/lib/postgresql/data
