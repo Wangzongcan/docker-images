@@ -20,8 +20,8 @@ RUN gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E206
     curl -sSL https://get.rvm.io | bash -s stable && \
     /bin/bash -l -c 'source /etc/profile.d/rvm.sh' && \
     /bin/bash -l -c 'rvm requirements' && \
-    /bin/bash -l -c 'rvm install 3.0.0' && \
-    /bin/bash -l -c 'rvm use 3.0.0 --default' && \
+    /bin/bash -l -c 'rvm install 3.0.1' && \
+    /bin/bash -l -c 'rvm use 3.0.1 --default' && \
     /bin/bash -l -c 'rvm rubygems current' && \
     echo "source /etc/profile.d/rvm.sh" >> /etc/profile && \
     mkdir -p /var/run/puma && \
