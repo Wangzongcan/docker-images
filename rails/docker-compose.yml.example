@@ -4,6 +4,8 @@ services:
     build: ./baseimage
     environment:
       - APP_NAME=
+    volumes:
+      - ./nginx/ssl/:/etc/nginx/ssl/
     ports:
       - "80:80"
       - "443:443"

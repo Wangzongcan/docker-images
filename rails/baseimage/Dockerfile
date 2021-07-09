@@ -59,7 +59,8 @@ RUN mkdir /etc/service/nginx && \
     cp /tmp/build/runit/nginx-log-forwarder /etc/service/nginx-log-forwarder/run && \
     chmod +x /etc/service/nginx/run && \
     chmod +x /etc/service/nginx-log-forwarder/run && \
-    cp /tmp/build/configs/nginx/nginx_default.conf /etc/nginx/sites-available/default
+    cp /tmp/build/configs/nginx/nginx_default.conf /etc/nginx/sites-available/default && \
+    cp /tmp/build/configs/nginx/app_variables.conf /etc/nginx/snippets/app_veriables.conf
 
 EXPOSE 80 443
 
